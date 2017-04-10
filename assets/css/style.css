@@ -4,7 +4,7 @@ body {
     text-align: center;
     background: url("../images/battlebackground.png");
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: center;
     background-repeat: no-repeat;
     background-size: 1200px 1200px;
     min-width: 1200px;
@@ -32,9 +32,15 @@ h2 {
 	font-size: 20px;
 }
 
+span {
+    font-size: 50px;
+}
+
 .container {
 	width: 900px;
 }
+
+/* Enemy Area */
 
 #enemy-hp {
 	position: relative;
@@ -44,7 +50,7 @@ h2 {
 
 .hp-enemy {
 	position: relative;
-    top: 88px;
+    top: 87px;
     left: 103px;
     width: 197px;
     height: 10px;
@@ -52,12 +58,8 @@ h2 {
     background: none;
 }
 
-.progress-bar {
-	background: green;
-}
-
 #enemy-grass {
-	position: relative;
+    position: relative;
     top: 100px;
     left: 150px;
 }
@@ -69,8 +71,59 @@ h2 {
     height: 120px;
 }
 
+.progress-bar {
+	background: green;
+}
+
+/* End Enemy Area */
+
+/* Player Area */
+
+#player-area {
+    position: relative;
+    top: 100px;
+}
+
+#player-grass {
+    width: 450px;
+    position: relative;
+    left: -80px;
+}
+
+#player-poke {
+    position: relative;
+    bottom: 225px;
+    right: 75px;
+    height: 150px;
+}
+
+#player-hp {
+    position: relative;
+    top: 60px;
+}
+
+.hp-player {
+    position: relative;
+    top: -2px;
+    left: 138px;
+    width: 197px;
+    height: 10px;
+    border-radius: 0;
+    background: none;
+}
+
+/* End Player Area */
+
 .hp-bar {
 	width: 400px;
     height: 100px;
     border: 2px solid black;
+}
+
+.caution {
+    background: yellow;
+}
+
+.danger {
+    background: red;
 }

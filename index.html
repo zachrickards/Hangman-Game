@@ -15,11 +15,11 @@
 		<h2>Press any letter to get started!</h2>
 	</header>
 	<div class="container">
-		<div id="emeny" class="row">
+		<div id="enemy-area" class="row">
 			<div class="col-xs-4">
 				<img id="enemy-hp" class="hp-bar" src="assets/images/hpbar.png" alt="hpBar"/>
 				<div class="progress hp-enemy">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+				  <div id="enemy-health" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 				    <span class="sr-only"></span>
 				  </div>
 				</div>
@@ -29,25 +29,23 @@
 
 			</div>
 		</div>
-		<div id="player" class="row">
-			<div class="col-md-6">
-				<img id="enemy-grass" src="assets/images/mygrass.png" alt="my-grass"/>
+		<div id="player-area" class="row">
+			<div id="player" class="col-md-6">
+				<img id="player-grass" src="assets/images/mygrass.png" alt="my-grass"/>
 			</div>
 			<div class="col-md-6">
-				<img class="hp-bar" src="assets/images/hpbar.png" alt="hpBar"/>
+				<img id="player-hp" class="hp-bar" src="assets/images/hpbar.png" alt="hpBar"/>
+				<div class="progress hp-player">
+					<div id="player-health" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+				    	<span class="sr-only"></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div id="attack" class="row">
-					<div id="attack-guess" class="col-md-12">
-					
-					</div>
-				</div>
-				<div id="score" class="row">
-					<div class="col-md-12">
-
-					</div>
+					<div id="attack-guess" class="col-md-12"></div>
 				</div>
 			</div>
 		</div>
@@ -56,7 +54,6 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/hangman.js"></script>
 </body>
 </html>
